@@ -1,0 +1,60 @@
+County,Total Capacity (MW),Unique Technologies,Unique Energy Sources,City,Plant Name,Plant Type,Flood Risk,Wind Vulnerability,Coastal Proximity,Historical Outages,Population 2023
+Alachua,4776.5,7.0,4.0,"Gainesville, Archer, Micanopy, High Springs, Newberry","Deerhaven Generating Station, South West Landfill, Micanopy Energy Storage Facility, High Springs Solar Power Plant, Gilchrist County Solar","Natural Gas Steam Turbine, Batteries, Solar Photovoltaic",Low,Low,No,Unknown,1429970.0
+Baker,298.0,1.0,1.0,"Glen St. Mary, Glen St Mary","Northern Preserve Solar, Cedar Trail",Solar Photovoltaic,Low,Low,No,Unknown,56736.0
+Bay,2657.4,3.0,3.0,"Southport, Panama City, Youngstown","Lansing Smith, WestRock Panama City Mill, FPL Saw Palmetto Solar Energy Center","Natural Gas Fired Combined Cycle, Solar Photovoltaic","Low, High","Low, High","No, Yes",Unknown,572307.0
+Brevard,20886.6,5.0,3.0,"Cocoa, Titusville, Merritt Island, Sebastian, Palm Bay, Merrit Island","Cape Canaveral, Indian River Plant, Space Coast Next Gen Solar Energy, Barefoot Bay Solar Energy Center, Palm Bay Solar, Discovery Solar Center","Natural Gas Fired Combined Cycle, Natural Gas Fired Combustion Turbine, Solar Photovoltaic","Low, High",Low,"No, Yes",Unknown,3863874.0
+Broward,12281.7,5.0,4.0,"Ft. Lauderdale, Pompano Beach, Pembroke Pines","Lauderdale, CSL Gas Recovery, Pembroke Lakes Mall","Natural Gas Fired Combustion Turbine, Landfill Gas, Solar Photovoltaic","Low, High",Low,"No, Yes",Unknown,5887593.0
+Calhoun,447.0,1.0,1.0,"Altha, Clarksville","FPL Chipola River Solar Energy Center, FPL Shirer Branch Solar Energy Center",Solar Photovoltaic,Low,Low,No,Unknown,26940.0
+Charlotte,162.0,3.0,3.0,Punta Gorda,Port Charlotte Energy LLC,Landfill Gas,High,Low,Yes,Unknown,206134.0
+Citrus,3523.9,3.0,3.0,Crystal River,Crystal River,Natural Gas Fired Combined Cycle,Low,Low,No,Unknown,166696.0
+Clay,149.0,1.0,1.0,Green Cove Springs,Magnolia Springs Solar Center,Solar Photovoltaic,Low,Low,No,Unknown,232439.0
+Collier,157.0,2.0,2.0,"Naples, Immokalee","Waste Management Naples LFGTE Project, Immokalee","Landfill Gas, Solar Photovoltaic","High, Low","High, Low","Yes, No",Unknown,808620.0
+Columbia,358.8,2.0,2.0,"Lake City, Fort White","Sunshine Gateway Solar Energy Center, Columbia Solar Power Plant",Solar Photovoltaic,Low,Low,No,Unknown,146126.0
+DeSoto,252.5,2.0,2.0,Arcadia,DeSoto Next Generation Solar Energy,Solar Photovoltaic,Low,Low,No,Unknown,35979.0
+Desoto,74.5,1.0,1.0,,,,,,,,0.0
+Duval,12216.0,9.0,6.0,"Jacksonville, Baldwin, Duval, Jscksonville","St Johns River Power Park, Brandy Branch, AEP Jacksonville Solar Project, Imeson Solar","Natural Gas Fired Combustion Turbine, Solar Photovoltaic","High, Low","High, Low","Yes, No",Unknown,4123288.0
+Escambia,12541.0,6.0,4.0,"Pensacola, Cantonment, Bellview, McDavid, Molino","Gulf Clean Energy Center, Pensacola Florida Plant, Gulf Coast Solar Center III, Cotton Creek Solar Energy Center, Sparkleberry","Natural Gas Steam Turbine, Solar Photovoltaic","High, Low","High, Low","Yes, No",Unknown,1634640.0
+Gadsden,118.0,2.0,2.0,Chattahoochee,J Woodruff,Conventional Hydroelectric,Low,Low,No,Unknown,43833.0
+Gilchrist,160.4,2.0,2.0,Trenton,Trenton Solar Power Plant,Solar Photovoltaic,Low,Low,No,Unknown,19587.0
+Gulf,5.5,1.0,1.0,Port St. Joe,Cape San Blas,Batteries,Low,Low,No,Unknown,15693.0
+Hamilton,522.3,3.0,3.0,"White Springs, Jasper, Jennings","Suwannee River Chemical Complex, Hamilton Solar Power Plant, Jennings Energy Storage Facility","Solar Photovoltaic, Batteries",Low,Low,No,Unknown,40413.0
+Hardee,6603.6,3.0,2.0,"Bowling Green, Ft Green, Wauchula","Midulla Generating Station, Unknown, Vandolah Power Station","Natural Gas Fired Combined Cycle, Natural Gas Fired Combustion Turbine",Low,Low,No,Unknown,77280.0
+Hendry,694.0,2.0,2.0,"Clewiston, Labelle","Clewiston Sugar House, Hammock Solar","Other Waste Biomass, Solar Photovoltaic",Low,Low,No,Unknown,86666.0
+Hernando,1.6,1.0,1.0,Brooksville,Hernando,Landfill Gas,Low,Low,No,Unknown,212807.0
+Highlands,186.9,2.0,2.0,"Avon Park, Sebring, Lake Placid","Avon Park, Dinner Lake, Lake Placid Solar Power Plant",Batteries,Low,Low,No,Unknown,322842.0
+Hillsborough,44310.6,8.0,7.0,"Apollo Beach, Tampa, Riverview, Gibsonton, Wimauma, Lithia, Ruskin, Plant City, Dover","Big Bend, F J Gannon, Mosaic Co Tampa Facility, Tampa Electric Co NA 3, Balm Solar, Lithia Solar, Little Manatee River Solar, Laurel Oaks Solar, Dover Solar","Solar Photovoltaic, All Other","Low, High","Low, High","No, Yes",Unknown,13820076.0
+Indian River,298.0,1.0,1.0,Vero Beach,Indian River Solar Center,Solar Photovoltaic,High,Low,Yes,Unknown,169795.0
+Jackson,913.2,2.0,2.0,"Sneads, Campbellton, Cottondale, Marianna","Scholz, Springhill Gas Recovery Plant, Gulf Power Blue Indigo Energy, Blue Springs","Landfill Gas, Solar Photovoltaic",Low,Low,No,Unknown,194488.0
+Lake,70.8,3.0,3.0,"Leesburg, Okahumpka, Mount Dora","Cutrale Citrus Juices USA I, Covanta Lake County Energy, Mount Dora Solar Farm F","Natural Gas Fired Combustion Turbine, Municipal Solid Waste, Solar Photovoltaic",Low,Low,No,Unknown,1273386.0
+Lee,5479.8,4.0,3.0,"Ft. Myers, Fort Myers","Fort Myers, Lee County Solid Waste Energy","Natural Gas Fired Combined Cycle, Municipal Solid Waste","Low, High","Low, High","No, Yes",Unknown,1669146.0
+Leon,753.7,4.0,2.0,Tallahassee,Arvah B Hopkins,Natural Gas Fired Combined Cycle,Low,Low,No,Unknown,296913.0
+Levy,149.8,1.0,1.0,"Inglis, Chiefland","Levy Nuclear Plant, Hardeetown Solar Power Plant",Solar Photovoltaic,Low,Low,No,Unknown,93090.0
+Madison,0.0,,,Lee,Winquepin Renewable Energy Center,,Low,Low,No,Unknown,18519.0
+Manatee,11343.3,6.0,4.0,"Parrish, Bradenton, Myakka City","Manatee, Tropicana Products Bradent, Willow Solar Energy Center","Natural Gas Steam Turbine, Natural Gas Fired Combustion Turbine, Solar Photovoltaic",Low,Low,No,Unknown,1323285.0
+Marion,2.4,1.0,1.0,Ocala,G2 Energy Marion LLC,Landfill Gas,Low,Low,No,Unknown,409959.0
+Martin,5046.0,2.0,2.0,"Indiantown, North of Indiantown","Martin, Sweetbay Solar Center","Natural Gas Fired Combined Cycle, Solar Photovoltaic",Low,Low,No,Unknown,326630.0
+Miami Dade,6141.8,7.0,6.0,"Miami, Homestead","Cutler, Turkey Point",Nuclear,"High, Low","High, Low","Yes, No",Unknown,0.0
+Monroe,550.0,1.0,1.0,"Big Pine Key, Marathon, Cudjoe Key, Stock Island","Big Pine, Marathon Generating Plant, Cudjoe, Stock Island",Petroleum Liquids,"High, Low",Low,"Yes, No",Unknown,322456.0
+Nassau,470.0,3.0,4.0,"Fernandina Beach, Callahan","Fernandina Beach Mill, Nassau Solar Center","Wood/Wood Waste Biomass, Solar Photovoltaic","High, Low",Low,"Yes, No",Unknown,203002.0
+Okaloosa,60.0,1.0,1.0,"Valparaiso, Holt","Gulf Coast Solar Center I, Canoe",Solar Photovoltaic,Low,Low,No,Unknown,436928.0
+Okeechobee,2021.1,2.0,2.0,Okeechobee,Okeechobee Clean Energy Center,Natural Gas Fired Combined Cycle,Low,Low,No,Unknown,41427.0
+Orange,9168.0,4.0,4.0,"Orlando, Rio Pinar, Lake Buena Vista, Bay Lake","Stanton Energy Center, Rio Pinar, Central Energy Plant, Citrus Ridge Solar","Conventional Steam Coal, Natural Gas Fired Combined Cycle, Solar Photovoltaic",Low,Low,No,Unknown,5885664.0
+Osceola,12856.0,5.0,4.0,"Kissimmee, St. Cloud, Intercession City, Kenansville, Saint Cloud","Hansel, St Cloud, Cane Island, Osceola Solar Facility, Storey Bend Solar","Natural Gas Fired Combustion Turbine, Solar Photovoltaic",Low,Low,No,Unknown,2188920.0
+Ozaukee,7.5,1.0,1.0,Cedarburg,"Jackson Solar WI, LLC",Solar Photovoltaic,Low,Low,No,Unknown,0.0
+Palm Beach,42650.3,6.0,5.0,"Riviera Beach, Lake Worth, West Palm Beach, Bryant, South Bay, Loxahatchee, Westlake","Riviera, Tom G Smith, Palm Beach Renewable Energy Facility 1, Bryant Sugar House, Okeelanta Cogeneration, West County Energy Center, Hibiscus Solar Energy Center","Natural Gas Fired Combined Cycle, Petroleum Liquids, Municipal Solid Waste, Other Waste Biomass, Solar Photovoltaic","Low, High","Low, High","No, Yes",Unknown,10736607.0
+Pasco,9047.0,4.0,3.0,"Holiday, Spring Hill, Shady Hills, Dade City, Zephyrhills","Anclote, Pasco Cnty Solid Waste Resource Recovery, Shady Hills Generating Station, Mountain View Solar (FL), Juniper Solar (FL)","Natural Gas Steam Turbine, Municipal Solid Waste, Natural Gas Fired Combustion Turbine, Solar Photovoltaic",Low,Low,No,Unknown,3164980.0
+Pinellas,5352.3,6.0,5.0,"St. Petersburg, Oldsmar, St Petersburg","Bayboro, Higgins, John Hopkins Middle School Microgrid","Petroleum Liquids, Batteries","High, Low",Low,"Yes, No",Unknown,2884788.0
+Polk,52453.6,5.0,4.0,"Lakeland, Mulberry, Bartow, Ft. Meade, Auburndale, Lake Wales, Winter Haven, Fort Meade","Larsen Memorial, Polk, Hines Energy Complex, Tiger Bay, Cutrale Citrus Juices USA II, Florida's Natural Growers, Legoland Solar, OE_FL10","Natural Gas Fired Combustion Turbine, Natural Gas Fired Combined Cycle, Solar Photovoltaic",Low,Low,No,Unknown,6546640.0
+Putnam,15929.2,4.0,4.0,"Palatka, East Palatka, Hawthorne, Florahome, Interlachen, Putnam, San Mateo","Seminole (FL), Putnam, Horizon Solar Energy Center, Coral Farms Solar Energy Center, Twin Lakes, OE_FL7, Tupelo Solar","Conventional Steam Coal, Solar Photovoltaic","High, Low",Low,"Yes, No",Unknown,531685.0
+Santa Rosa,1612.4,3.0,2.0,"Pace, Navarre, Milton, TBD","Pea Ridge, Gulf Coast Solar Center II, Blackwater River Solar Energy Center, Big Juniper Solar","Natural Gas Fired Combustion Turbine, Solar Photovoltaic",Low,Low,No,Unknown,812648.0
+Sarasota,6.4,1.0,1.0,Nokomis,Sarasota County LFGTE Facility,Landfill Gas,Low,Low,No,Unknown,469013.0
+Seminole,12.6,2.0,2.0,"Geneva, Altamonte Springs","Seminole Energy, Altamonte Mall","Landfill Gas, Solar Photovoltaic",Low,Low,No,Unknown,968542.0
+St Johns,74.5,1.0,1.0,Elkton,Trailside Solar Center,Solar Photovoltaic,Low,Low,No,Unknown,0.0
+St Lucie,18110.4,3.0,3.0,"Ft. Pierce, Jensen Beach, Port St. Lucie, Port St Lucie, Fort Pierce, Ft. Pierce   ","Henry D King, St Lucie, Loggerhead Solar Energy Center, Sundew, Buttonwood, Orchard","Nuclear, Solar Photovoltaic","Low, High",Low,"No, Yes",Unknown,0.0
+Suwannee,771.8,4.0,4.0,"Live Oak, O'Brien","Suwannee River, Hildreth Solar Power Plant","Natural Gas Fired Combustion Turbine, Solar Photovoltaic",Low,Low,No,Unknown,92260.0
+Taylor,5.1,1.0,1.0,Perry,Buckeye Florida LP,,Low,Low,No,Unknown,21582.0
+Union,74.5,1.0,1.0,Lake Butler,Union Springs Solar Center,Solar Photovoltaic,Low,Low,No,Unknown,15532.0
+Volusia,13297.6,4.0,3.0,"DeBary, Enterprise, New Smyrna Beach, Daytona Beach","Sanford, G E Turner, Smith Street, Daytona International Speedway Solar","Natural Gas Fired Combined Cycle, Solar Photovoltaic","Low, High","Low, High","No, Yes",Unknown,2361428.0
+Wakulla,270.1,1.0,1.0,St Marks,S O Purdom,Natural Gas Fired Combined Cycle,Low,Low,No,Unknown,36449.0
+Walton,149.0,1.0,1.0,"Eglin AFB, Defuniak Springs","Portland (FL), Chautauqua Solar Energy Center",Solar Photovoltaic,Low,Low,No,Unknown,172708.0
+Washington,74.5,1.0,1.0,Vernon,FPL Cypress Pond Solar,Solar Photovoltaic,Low,Low,No,Unknown,25602.0

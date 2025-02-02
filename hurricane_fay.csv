@@ -1,0 +1,20 @@
+Date (UTC),Pressure (mb),Wind Speed (kt),Category,X,Y,City,County
+08/18/2008 20Z,998,50,TS,24.5,-81.8,Key West,Monroe
+08/19/2008 00Z,997,50,TS,25,-81.9,Key West,Monroe
+08/19/2008 12Z,988,55,TS,26.4,-81.4,Cape Coral,Lee
+08/19/2008 18Z,986,60,TS,27,-81.1,(Lake Okeechobee),Glades
+08/20/2008 00Z,988,55,TS,27.5,-80.9,(Lake Okeechobee),Glades
+08/20/2008 06Z,992,50,TS,28,-80.6,Melbourne,Brevard
+08/20/2008 12Z,994,45,TS,28.4,-80.6,Orlando,Orange
+08/20/2008 18Z,997,45,TS,28.7,-80.6,Cape Canaveral,Brevard
+08/21/2008 19Z,993,55,TS,29.3,-81.1,Daytona,Volusia
+08/22/2008 00Z,994,50,TS,29.3,-81.2,Daytona,Volusia
+08/22/2008 06Z,995,50,TS,29.5,-81.9,Gainesville,Alachua
+08/22/2008 12Z,996,45,TS,29.6,-82.4,Gainesville,Alachua
+08/22/2008 18Z,997,40,TS,29.8,-83,Cross City,Dixie
+08/23/2008 00Z,996,45,TS,29.7,-83.8,Cross City,Dixie
+08/23/2008 06Z,997,45,TS,29.8,-84.7,Alapalachicola,Franklin
+08/23/2008 06Z,997,45,TS,29.8,-84.7,Alapalachicola,Franklin
+08/23/2008 12Z,998,40,TS,30,-85.2,Panama,Bay
+08/23/2008 18Z,999,40,TS,30.5,-85.9,Panama,Bay
+08/24/2008 00Z,999,30,TD,30.8,-86.7,Milton,Santa Rosa

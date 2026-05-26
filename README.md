@@ -26,7 +26,7 @@ python3 hurricane.py
 
 Florida hurricanes affect counties unevenly based on storm trajectory, population density, and infrastructure stress. Many existing tools rely on static risk maps that do not consider the specific path or intensity of a hurricane.
 
-This project evaluates county-level risk dynamically using quantitative modeling and publicly available data.
+This project evaluates county-level risk dynamically using quantitative modeling and publicly available data. It is a class project for Professor Shichao Pei's CS 310 course at UMB.
 
 ---
 

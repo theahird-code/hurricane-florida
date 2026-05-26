@@ -5,12 +5,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load datasets
-energy_population_file = pd.read_csv('/home/theahird/code/energy_pop.csv')
-hurricane_file1 = pd.read_csv('/home/theahird/code/hurricane_irma.csv')
-hurricane_file2 = pd.read_csv('/home/theahird/code/hurricane_idalia2.csv')
-hurricane_file3 = pd.read_csv('/home/theahird/code/hurricane_fay.csv')
-florida_risk_index_file = pd.read_csv('/home/theahird/code/florida_ri.csv')
-county_coordinates_file = pd.read_csv('/home/theahird/code/county_coordinates.csv')
+energy_population_file = pd.read_csv('energy_pop.csv')
+hurricane_file1 = pd.read_csv('hurricane_irma.csv')
+hurricane_file2 = pd.read_csv('hurricane_idalia.csv')
+hurricane_file3 = pd.read_csv('hurricane_fay.csv')
+florida_risk_index_file = pd.read_csv('florida_ri.csv')
+county_coordinates_file = pd.read_csv('county_coordinates.csv')
 
 print("Datasets loaded successfully.")
 # Define wind speed ranges for each hurricane category in knots (kt)
@@ -85,7 +85,8 @@ def calculate_weighted_score(data, weights):
 def derive_weights_from_eigenvectors(data, columns):
     print("Deriving weights from eigenvectors...")
     # Min-Max normalize the data (scale to 0-1).
-    normalized_data = (data[columns] - data[columns].min()) / (data[columns].max() - data[columns].min())
+    normalized_data = (data[columns] - data[columns].min()
+                      )/ (data[columns].max() - data[columns].min())
     print("Normalized data:\n", normalized_data.head())
 
     # Calculate covariance matrix and eigenvectors using np.
@@ -107,18 +108,30 @@ def derive_weights_from_eigenvectors(data, columns):
     return {columns[i]: abs(normalized_weights[i]) for i in range(len(columns))}
 # Function to rank hurricane risks
 def rank_hurricane_risk_with_weights(
-    energy_population_file, hurricane_file1, hurricane_file2, hurricane_file3, florida_risk_index_file, county_coordinates_file
+    energy_population_file, 
+    hurricane_file1, 
+    hurricane_file2, 
+    hurricane_file3, 
+    florida_risk_index_file, 
+    county_coordinates_file
 ):
+    
     print("Ranking hurricane risks...")
 
     # Combine hurricane datasets
-    hurricane_data = pd.concat([hurricane_file1, hurricane_file2, hurricane_file3], ignore_index=True)
+    hurricane_data = pd.concat(
+        [hurricane_file1, 
+         hurricane_file2,
+         hurricane_file3], ignore_index=True)
     print("Hurricane data combined:\n", hurricane_data.head())
 
     # Merge datasets on shared location fields
-    merged_data = pd.merge(energy_population_file, hurricane_data, on=['County'], how='inner')
-    merged_data = pd.merge(merged_data, florida_risk_index_file, on=['County'], how='inner')
-    merged_data = pd.merge(merged_data, county_coordinates_file, on=['County'], how='inner')
+    merged_data = pd.merge(
+        energy_population_file, hurricane_data, on=['County'], how='inner')
+    merged_data = pd.merge(
+        merged_data, florida_risk_index_file, on=['County'], how='inner')
+    merged_data = pd.merge(
+        merged_data, county_coordinates_file, on=['County'], how='inner')
     merged_data = merged_data.drop_duplicates(subset=['County'])
     print("Merged data:\n", merged_data.head())
     
@@ -127,32 +140,56 @@ def rank_hurricane_risk_with_weights(
     
     # Min-Max normalize the data
     print("Normalizing data...")
-    merged_data['Normalized Hurricane Risk Index'] = (merged_data['Hurricane Risk Index'] - merged_data['Hurricane Risk Index'].min()) / (merged_data['Hurricane Risk Index'].max() - merged_data['Hurricane Risk Index'].min())
-    merged_data['Normalized Population'] = (merged_data['Population 2023'] - merged_data['Population 2023'].min()) / (merged_data['Population 2023'].max() - merged_data['Population 2023'].min())
-    merged_data['Normalized Energy Capacity'] = (merged_data['Total Capacity (MW)'] - merged_data['Total Capacity (MW)'].min()) / (merged_data['Total Capacity (MW)'].max() - merged_data['Total Capacity (MW)'].min())
-    merged_data['Normalized Risk Index'] = (merged_data['National Risk Index'] - merged_data['National Risk Index'].min()) / (merged_data['National Risk Index'].max() - merged_data['National Risk Index'].min())
-    # the smaller the score, the closer the hurrican is, so we need to find the complement result of min-max normalization.
-    merged_data['Normalized Hurricane Proximity'] = 1 - (merged_data['Hurricane Proximity'] - merged_data['Hurricane Proximity'].min()) / (merged_data['Hurricane Proximity'].max() - merged_data['Hurricane Proximity'].min())
+    merged_data['Norm Hurricane Risk Index'] = (
+        merged_data['H_RI'] - merged_data['H_RI'].min()
+        ) / (merged_data['H_RI'].max() - merged_data['H_RI'].min())
+    merged_data['Norm Population'] = ((merged_data['Population 2023'])
+                                    -(merged_data['Population 2023'].min())
+        ) / ((merged_data['Population 2023'].max())
+           -(merged_data['Population 2023'].min())
+    )
+    merged_data['Norm Energy Capacity'] = (
+    (
+        merged_data['Total Capacity (MW)']
+        - merged_data['Total Capacity (MW)'].min()
+    )
+    /
+    (
+        merged_data['Total Capacity (MW)'].max()
+        - merged_data['Total Capacity (MW)'].min()
+    )
+)
+    merged_data['Norm Risk Index'] = (
+        merged_data['N_RI'] - merged_data['N_RI'].min()
+    ) / (merged_data['N_RI'].max() - merged_data['N_RI'].min())
+    # the smaller the score, the closer the hurricane is, so we need
+    # to find the complement result of min-max normalization.
+    merged_data['Norm Hurricane Proximity'] = 1 - (
+    (merged_data['Hurricane Proximity'] - merged_data['Hurricane Proximity'].min()
+     ) /(
+    merged_data['Hurricane Proximity'].max() - merged_data['Hurricane Proximity'].min()))
+
     print("Normalized data columns added:\n", merged_data.head())
 
     # Derive weights using eigenvectors
     weights_cat = [
-        'Normalized Hurricane Proximity', 
-        'Normalized Population', 
-        'Normalized Energy Capacity',
-        'Normalized Risk Index',
-        'Normalized Hurricane Risk Index'
+        'Norm Hurricane Proximity', 
+        'Norm Population', 
+        'Norm Energy Capacity',
+        'Norm Risk Index',
+        'Norm Hurricane Risk Index'
     ]
     weights = derive_weights_from_eigenvectors(merged_data, weights_cat)
     print("Derived weights:\n", weights)
 
     # Calculate weighted scores
     merged_data['Risk Score'] = calculate_weighted_score(merged_data, weights)
-    print("Risk scores calculated:\n", merged_data[['County', 'Risk Score']].head())
+    print("Risk scores calculated:\n", 
+          merged_data[['County', 'Risk Score']].head())
 
     # Rank counties by risk score
     ranked_counties = merged_data.sort_values(by='Risk Score', ascending=False)
-    print("Ranked counties:\n", ranked_counties[['County', 'Risk Score']].head())
+    print("Ranked counties:\n",ranked_counties[['County', 'Risk Score']].head())
 
     # Save ranked results to a CSV
     output_csv_path = 'ranked_hurricane_risk.csv'
@@ -161,7 +198,11 @@ def rank_hurricane_risk_with_weights(
 
     # Plot heatmap
     heatmap_data = merged_data.set_index('County')[
-        ['Normalized Population', 'Normalized Energy Capacity', 'Normalized Risk Index', 'Normalized Hurricane Risk Index', 'Normalized Hurricane Proximity']
+        ['Norm Population',
+         'Norm Energy Capacity',
+         'Norm Risk Index',
+         'Norm Hurricane Risk Index',
+         'Norm Hurricane Proximity']
     ]
     plt.figure(figsize=(12, 8))
     sns.heatmap(
@@ -182,6 +223,13 @@ def rank_hurricane_risk_with_weights(
 
 # Call the function to test
 ranked_results = rank_hurricane_risk_with_weights(
-    energy_population_file, hurricane_file1, hurricane_file2, hurricane_file3, florida_risk_index_file, county_coordinates_file
+    energy_population_file,
+    hurricane_file1, 
+    hurricane_file2,
+    hurricane_file3,
+    florida_risk_index_file,
+    county_coordinates_file
 )
+# Displays rank in the console,
+# loads heatmap, and then saves the ranked counties in a csv file.
 print("Final ranked results:\n", ranked_results.head())

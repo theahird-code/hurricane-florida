@@ -61,17 +61,17 @@ Each of Florida’s 67 counties is represented by a central geographic coordinat
 ## Project Structure
 
 ```text
-├── data/        # Raw and processed datasets
-├── src/         # Core analysis and algorithms
-├── results/     # CSV outputs and visualizations
-├── main.py      # Entry point
+hurricane-florida/
+├── data/          # Raw datasets
+├── results/       # CSV outputs and heatmap image
+├── hurricane.py   # Main script
 └── requirements.txt
 ```
 ## Running the Project
 
 ```bash
 pip install -r requirements.txt
-python main.py
+python3 hurricane.py
 ```
 ## Authors
 

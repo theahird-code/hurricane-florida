@@ -1,4 +1,4 @@
-# Florida Hurricane Preparedness Algorithm
+# Florida Hurricane Preparedness Algorithm 💨
 
 A Python-based system that ranks Florida counties by hurricane evacuation and preparedness risk using historical storm data, population metrics, and electrical grid vulnerability.
 

@@ -6,6 +6,22 @@ Designed as a decision-support tool for emergency planning that accounts for **a
 
 ---
 
+## Project Structure
+
+```text
+hurricane-florida/
+├── data/          # Raw datasets
+├── results/       # CSV outputs and heatmap image
+├── hurricane.py   # Main script
+└── requirements.txt
+```
+## Running the Project
+
+```bash
+pip install -r requirements.txt
+python3 hurricane.py
+```
+
 ## Why This Project
 
 Florida hurricanes affect counties unevenly based on storm trajectory, population density, and infrastructure stress. Many existing tools rely on static risk maps that do not consider the specific path or intensity of a hurricane.
@@ -57,22 +73,6 @@ Each of Florida’s 67 counties is represented by a central geographic coordinat
 - **Pandas Sorting (Timsort)** – Ordered results
 
 ---
-
-## Project Structure
-
-```text
-hurricane-florida/
-├── data/          # Raw datasets
-├── results/       # CSV outputs and heatmap image
-├── hurricane.py   # Main script
-└── requirements.txt
-```
-## Running the Project
-
-```bash
-pip install -r requirements.txt
-python3 hurricane.py
-```
 ## Authors
 
 Thea Hird

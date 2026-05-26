@@ -5,12 +5,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load datasets
-energy_population_file = pd.read_csv('energy_pop.csv')
-hurricane_file1 = pd.read_csv('hurricane_irma.csv')
-hurricane_file2 = pd.read_csv('hurricane_idalia.csv')
-hurricane_file3 = pd.read_csv('hurricane_fay.csv')
-florida_risk_index_file = pd.read_csv('florida_ri.csv')
-county_coordinates_file = pd.read_csv('county_coordinates.csv')
+energy_population_file = pd.read_csv('data/energy_pop.csv')
+hurricane_file1 = pd.read_csv('data/hurricane_irma.csv')
+hurricane_file2 = pd.read_csv('data/hurricane_idalia.csv')
+hurricane_file3 = pd.read_csv('data/hurricane_fay.csv')
+florida_risk_index_file = pd.read_csv('data/florida_ri.csv')
+county_coordinates_file = pd.read_csv('data/county_coordinates.csv')
 
 print("Datasets loaded successfully.")
 # Define wind speed ranges for each hurricane category in knots (kt)
@@ -192,7 +192,7 @@ def rank_hurricane_risk_with_weights(
     print("Ranked counties:\n",ranked_counties[['County', 'Risk Score']].head())
 
     # Save ranked results to a CSV
-    output_csv_path = 'ranked_hurricane_risk.csv'
+    output_csv_path = 'results/ranked_hurricane_risk.csv'
     ranked_counties.to_csv(output_csv_path, index=False)
     print(f"Ranked data has been saved to: {output_csv_path}")
 
@@ -217,7 +217,10 @@ def rank_hurricane_risk_with_weights(
     plt.xlabel('Risk Factors', fontsize=12)
     plt.ylabel('County', fontsize=12)
     plt.tight_layout()
+    plt.savefig('results/hurricane_risk_heatmap.png', dpi=300, bbox_inches='tight')
     plt.show()
+    
+    
 
     return ranked_counties
 
